@@ -1,12 +1,19 @@
 package com.example.movapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class MovieActivity extends AppCompatActivity {
     int[] images = {R.drawable.cenolaholmes, R.drawable.charvie, R.drawable.christmaschrinicals, R.drawable.cmagicmoonlight, R.drawable.cmagictoafrica, R.drawable.cnightmuseum, R.drawable.cspiderwickk, R.drawable.ctheoldguard, R.drawable.chisdarkmaterials, R.drawable.cgrownish, R.drawable.csuits, R.drawable.ctinyprettythings, R.drawable.cemilyinparis, R.drawable.cgodmothered};
@@ -23,7 +30,30 @@ public class MovieActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_movie);
+        setContentView(R.layout.nav_activity_movie);
+
+        NavigationView navigationView = findViewById((R.id.nav_view));
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.nav_home:
+                        Intent intent = new Intent(MovieActivity.this, MainActivity.class);
+                    case R.id.nav_movie:
+                        startActivity(new Intent(MovieActivity.this, MovieActivity.class));
+                        //Intent intent2 = new Intent(MainActivity.this, ListFormActivity.class);
+                    case R.id.nav_watchlist:
+                        Intent intent3 = new Intent(MovieActivity.this, ListFormActivity.class);
+                    case R.id.nav_form:
+                        Intent intent4 = new Intent(MovieActivity.this, WatchListActivity.class);
+                }
+                DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
+
+
+            }
+        });
 
         lView = (ListView) findViewById(R.id.androidList);
 

@@ -8,11 +8,6 @@ This is a mobile application that allows a user to browse through new movies and
 ## Author
  Odile Uwimpuhwe
 
-## Demonstration
-
-//*Home page
-//![home page](Photos/home.png)
-
 
 ## Installation / Setup instruction
 * Open Terminal {Ctrl+Alt+T}

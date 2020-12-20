@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">movApp</string>
+    <string name="invalid_name">The movie name should not be empty</string>
+    <string name="invalid_category">Please fill the movie category</string>
+    <string name="invalid_detail">Please fill the movie detail field</string>
 </resources>

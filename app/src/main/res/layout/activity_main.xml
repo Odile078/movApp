@@ -31,11 +31,11 @@
        android:id="@+id/textView"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginTop="330dp"
+       android:layout_marginTop="300dp"
        android:fontFamily="@font/allan"
        android:text="Plan your movie nights, time and breaks. It's easy make your list and plan here for easy managing and remembering."
        android:textColor="@android:color/black"
-       android:textSize="34sp"
+       android:textSize="20sp"
        tools:layout_editor_absoluteX="275dp"
        tools:layout_editor_absoluteY="194dp" />
 
@@ -43,13 +43,13 @@
        android:id="@+id/textView3"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginTop="490dp"
+       android:layout_marginTop="400dp"
        android:fontFamily="@font/amita"
        android:gravity="center_horizontal"
        android:text="Click below to add a new movie to your list."
        android:textAlignment="center"
        android:textColor="@color/cardview_dark_background"
-       android:textSize="30sp"
+       android:textSize="20sp"
        tools:layout_editor_absoluteX="275dp"
        tools:layout_editor_absoluteY="194dp" />
 
@@ -58,7 +58,7 @@
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_centerHorizontal="true"
-       android:layout_marginTop="600dp"
+       android:layout_marginTop="450dp"
        android:background="@color/design_default_color_secondary_variant"
        android:shadowColor="#592323"
 

@@ -36,16 +36,21 @@ public class MovieActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.nav_home:
-                        Intent intent = new Intent(MovieActivity.this, MainActivity.class);
-                    case R.id.nav_movie:
-                        startActivity(new Intent(MovieActivity.this, MovieActivity.class));
-                        //Intent intent2 = new Intent(MainActivity.this, ListFormActivity.class);
-                    case R.id.nav_watchlist:
-                        Intent intent3 = new Intent(MovieActivity.this, ListFormActivity.class);
-                    case R.id.nav_form:
-                        Intent intent4 = new Intent(MovieActivity.this, WatchListActivity.class);
+                if(item.getItemId()==R.id.nav_home){
+                    startActivity (new Intent(MovieActivity.this, MainActivity.class));
+
+                }
+                else if(item.getItemId()==R.id.nav_movie){
+                    startActivity(new Intent(MovieActivity.this, MovieActivity.class));
+
+                }
+                else if(item.getItemId()==R.id.nav_watchlist){
+                    startActivity(new Intent(MovieActivity.this, ListFormActivity.class));
+
+                }
+                else if(item.getItemId()==R.id.nav_form){
+                    startActivity (new Intent(MovieActivity.this, WatchListActivity.class));
+
                 }
                 DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
                 drawerLayout.closeDrawer(GravityCompat.START);

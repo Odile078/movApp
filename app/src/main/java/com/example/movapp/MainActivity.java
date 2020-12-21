@@ -33,16 +33,21 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.nav_home:
-                        Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                    case R.id.nav_movie:
-                        startActivity(new Intent(MainActivity.this, MovieActivity.class));
-                        //Intent intent2 = new Intent(MainActivity.this, ListFormActivity.class);
-                    case R.id.nav_watchlist:
-                        Intent intent3 = new Intent(MainActivity.this, ListFormActivity.class);
-                    case R.id.nav_form:
-                        Intent intent4 = new Intent(MainActivity.this, WatchListActivity.class);
+                if(item.getItemId()==R.id.nav_home){
+                    startActivity (new Intent(MainActivity.this, MainActivity.class));
+
+                }
+                else if(item.getItemId()==R.id.nav_movie){
+                    startActivity(new Intent(MainActivity.this, MovieActivity.class));
+
+                }
+                else if(item.getItemId()==R.id.nav_watchlist){
+                    startActivity(new Intent(MainActivity.this, ListFormActivity.class));
+
+                }
+                else if(item.getItemId()==R.id.nav_form){
+                    startActivity (new Intent(MainActivity.this, WatchListActivity.class));
+
                 }
                 DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
                 drawerLayout.closeDrawer(GravityCompat.START);

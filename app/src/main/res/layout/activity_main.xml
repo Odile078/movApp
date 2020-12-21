@@ -7,7 +7,7 @@
     android:background="@color/back"
     tools:context=".MainActivity">
 
-   <TextView
+   <!--<TextView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="Welcome to movApp"
@@ -17,7 +17,7 @@
        app:layout_constraintRight_toRightOf="parent"
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintVertical_bias="0.273"
-       android:layout_marginTop="10dp"/>
+       android:layout_marginTop="10dp"/>-->
 
    <ImageView
        android:id="@+id/imageView"
@@ -35,7 +35,7 @@
        android:fontFamily="@font/allan"
        android:text="Plan your movie nights, time and breaks. It's easy make your list and plan here for easy managing and remembering."
        android:textColor="@android:color/black"
-       android:textSize="20sp"
+       android:textSize="19sp"
        tools:layout_editor_absoluteX="275dp"
        tools:layout_editor_absoluteY="194dp" />
 
@@ -57,14 +57,36 @@
        android:id="@+id/toListFormButton"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_centerHorizontal="true"
-       android:layout_marginTop="450dp"
+       android:layout_marginStart="52dp"
+       android:layout_marginLeft="12dp"
+       android:layout_marginTop="452dp"
+       android:layout_marginEnd="32dp"
+       android:layout_marginRight="12dp"
+       android:layout_marginBottom="12dp"
        android:background="@color/design_default_color_secondary_variant"
        android:shadowColor="#592323"
-
-       android:text="Button"
+       android:text="Make Watchlist"
        android:textColor="@color/back"
        tools:layout_editor_absoluteX="164dp"
        tools:layout_editor_absoluteY="578dp" />
+
+   <Button
+       android:id="@+id/ListmoviesButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="200dp"
+       android:layout_marginLeft="72dp"
+       android:layout_marginTop="452dp"
+       android:layout_marginEnd="12dp"
+       android:layout_marginRight="12dp"
+       android:layout_marginBottom="12dp"
+       android:background="@color/design_default_color_secondary_variant"
+       android:shadowColor="#592323"
+
+       android:text="Trending"
+       android:textColor="@color/back"
+       tools:layout_editor_absoluteX="164dp"
+       tools:layout_editor_absoluteY="578dp" />
+
 
 </RelativeLayout>

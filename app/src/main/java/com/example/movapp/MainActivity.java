@@ -20,6 +20,7 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
     @BindView(R.id.toListFormButton)
     Button toListFormButton;
+    @BindView(R.id.ListmoviesButton) Button ListmoviesButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 
 
         toListFormButton.setOnClickListener(this);
+        ListmoviesButton.setOnClickListener(this);
 
         NavigationView navigationView = findViewById((R.id.nav_view));
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -63,6 +65,11 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         if(view == toListFormButton){
 
             Intent intent = new Intent(MainActivity.this, ListFormActivity.class);
+            startActivity(intent);
+        }
+        if(view == ListmoviesButton){
+
+            Intent intent = new Intent(MainActivity.this, MovieActivity.class);
             startActivity(intent);
         }
 

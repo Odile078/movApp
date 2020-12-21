@@ -14,13 +14,13 @@ This is a mobile application that allows a user to browse through new movies and
  ![DAshboard page](photos/dashboard.png)
 
  *Movies page
- ![Movies page](Photos/dmovies.png)
+ ![Movies page](photos/dmovies.png)
 
  *Watchlist page
-  ![Watchlist page](Photos/dmovieform.png)
+  ![Watchlist page](photos/dmovieform.png)
 
   *Watchlist
-   ![Watchlist](Photos/dmovieformresult.png)
+   ![Watchlist](hotos/dmovieformresult.png)
 
 
 ## Installation / Setup instruction

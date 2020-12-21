@@ -55,4 +55,7 @@ dependencies {
     //roboelectric testing
     testImplementation "org.robolectric:robolectric:3.8"
 
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+
 }

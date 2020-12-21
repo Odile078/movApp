@@ -20,7 +20,7 @@ This is a mobile application that allows a user to browse through new movies and
   ![Watchlist page](photos/dmovieform.png)
 
   *Watchlist
-   ![Watchlist](hotos/dmovieformresult.png)
+   ![Watchlist](photos/dmovieformresult.png)
 
 
 ## Installation / Setup instruction

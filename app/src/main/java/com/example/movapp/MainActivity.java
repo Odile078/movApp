@@ -6,10 +6,12 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -21,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
     @BindView(R.id.toListFormButton)
     Button toListFormButton;
     @BindView(R.id.ListmoviesButton) Button ListmoviesButton;
+    @BindView(R.id.textView)
+    TextView textview1;
+    @BindView(R.id.textView3) TextView textview2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +35,11 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 
         toListFormButton.setOnClickListener(this);
         ListmoviesButton.setOnClickListener(this);
+
+        /*Typeface customFont = Typeface.createFromAsset(getAssets(),"assets/Winterland.ttfjjj");
+        Typeface customFont2 = Typeface.createFromAsset(getAssets(),"assets/Romantica.otf");
+        textview1.setTypeface(customFont);
+        textview2.setTypeface(customFont2);*/
 
         NavigationView navigationView = findViewById((R.id.nav_view));
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -58,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 
             }
         });
+
     }
 
     @Override
